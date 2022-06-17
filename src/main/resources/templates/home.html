@@ -7,9 +7,6 @@
 
 <div th:replace="fragments/header :: header"></div>
 <!--Confirmation for deleting post-->
-<div th:if="${param.postDeleted}">
-    <p class="alert alert-success" role="alert">Your post has successfully been deleted</p>
-</div>
 
 <!--Success message for logging in-->
 <div th:if="${param.success}">
