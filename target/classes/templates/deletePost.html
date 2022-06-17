@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/fragments/head :: head"></head>
+<body>
+<div th:replace="/fragments/header :: header"></div>
+<div class="container">
+  <h1>Post Management System</h1>
+  <hr>
+  <h2>Update post</h2>
+
+  <form action="#" th:action="@{/deletePost/__${post.id}__/confirm}" th:object="${post}" method="">
+    <!-- Add hidden form field to handle update-->
+    <input type="hidden" th:field="*{id}"/>
+    <input type="text" th:field = "*{title}"  class="form-control mb-4 col-4">
+    <textarea th:field="*{body}" ></textarea>
+
+    <p>Are you sre you want to delete the post?</p>
+    <button type="submit" class="btn btn-danger col-2">Delete Post</button>
+    <a th:href="@{/}"> <button type="button" class="btn btn=info col-2">No</button></a>
+  </form>
+
+</div>

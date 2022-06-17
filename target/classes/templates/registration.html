@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head th:replace="/fragments/head :: head"></head>
+<body>
+
+<div th:replace="/fragments/header :: header"></div>
+
+<div class="container" th:class="align-center">
+
+    <!-- success message -->
+    <div th:if="${param.success}">
+        <div class="alert alert-info">You've successfully registered to our awesome app!</div>
+    </div>
+    <!--    duplicate username error-->
+    <div th:if="${param.error}">
+        <div class="alert alert-danger" role="alert">There is already an account registered with that username.</div>
+    </div>
+    <div id="register-new-user">
+    <h2>Register New User</h2>
+    <form action="#"
+          th:action="@{/registration}"
+          th:object="${user}"
+          method="post">
+<!--        <input id="username" type="text" class="form-control" th:field="*{username}" placeholder="Username" for="username"/>-->
+<!--        <input id="password" type="text" class="form-control" th:field="*{password}" placeholder="Password" for="password"/>-->
+<!--        <button class="green-btn" type="submit">Register</button>-->
+<!--        <span>Already registered? <a href="/" th:href="@{/login}">Login here</a></span>-->
+        <div class = "form-group">
+            <label class = "control-label" for="username">
+                Username
+            </label>
+            <input id="username" type="text" class="form-control" th:field="*{username}" placeholder="Username" for="username"/>
+        </div>
+
+        <div class = "form-group">
+            <label class = "control-label" for="password">
+                Password
+            </label>
+            <input id="password" type="password" class="form-control" th:field="*{password}" placeholder="Password" for="password"/>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-success" id="register-submit-button">Register</button>
+            <span id="register-login-link">Already registered?    <a href="/" th:href="@{/login}">Login here</a></span>
+        </div>
+    </form>
+</div>
+
+<footer th:replace="/fragments/footer :: footer"></footer>
+
+</body>
+</html>

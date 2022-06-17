@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/fragments/head :: head"></head>
+<body>
+<div th:replace="/fragments/header :: header"></div>
+<div class="container">
+
+    <hr>
+    <h2>Update post</h2>
+
+    <form action="#" th:action="@{/savePost}" th:object="${post}" method="post">
+        <!-- Add hidden form field to handle update-->
+        <input type="hidden" th:field="*{id}"/>
+        <input type="text" th:field = "*{title}"  class="form-control mb-4 col-4">
+        <textarea th:field="*{body}" ></textarea>
+
+
+        <button type="submit" class="btn btn-info col-2">Update Post</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>

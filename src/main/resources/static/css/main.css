@@ -1,0 +1,359 @@
+ul {
+    list-style: none;
+}
+
+.post {
+
+
+}
+
+
+
+#top-post {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+#body-post {
+    /*justify-content: center;*/
+    /*align-content: center;*/
+    padding: 10px;
+    text-align: center;
+    text-justify: center;
+}
+
+#post-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#buttons-box {
+    display: flex;
+    column-gap: 1vw;
+}
+
+#a-post {
+    border-style: solid;
+    border-color: #3A1026;
+    border-radius: 50px;
+    margin-left: 18vw;
+    margin-right: 10vw;
+    margin-top: 3vh;
+    /*margin-bottom: 3vh;*/
+    padding: 2vw 2vw 0vw 2vw;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.container {
+
+    /*padding-left: 4vw;*/
+
+
+
+}
+
+#spacer {
+    /*padding-bottom: 10vh;*/
+}
+
+body {
+
+    background: rgb(244,122,55);
+    background: linear-gradient(324deg, rgba(244,122,55,1) 0%, rgba(254,191,16,0.5) 42%, rgba(217,26,95,0.25) 79%)
+    no-repeat center fixed;
+    color: #3A1026;
+    cursor: default;
+    font-family: ibm-plex-sans, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    line-height: 1.5em;
+    margin: 0;
+    margin-bottom: 5vw;
+    padding: 25px;
+    text-rendering: optimizeLegibility;
+    max-width: 1600px;
+    position: relative;
+
+
+}
+
+.align-center, H2{
+    /*padding-left: 10vw;*/
+}
+.posts_wrapper {
+    /*margin-bottom: 20vh;*/
+    
+}
+
+/*.posts_wrapper {*/
+/*    border-color: red;*/
+/*    border-width: thick;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: space-between;*/
+/*}*/
+
+
+.pwrapper p{
+    color: rebeccapurple;
+}
+.card{
+    color: white;
+}
+.card-title{
+    color: white;!important;
+}
+/* Header/Blog Title */
+.header {
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+    background: none;
+}
+
+/*.container {*/
+/*    !*width: 80%;*!*/
+/*    margin: auto;*/
+/*}*/
+
+
+
+/* Fake image */
+.img {
+    float: left;
+    /*background-color: rgb(58,16,39, 0.4) ;*/
+    align-content: start;
+    width: auto;
+    padding: 0px;
+    margin: 0 20px 20px 0;
+    height: auto;
+}
+
+/*.post {*/
+/*    background-color: white;*/
+/*    padding: 20px;*/
+/*    margin-top: 20px;*/
+/*    text-align: center;*/
+/*}*/
+
+/*.post h2 {*/
+/*    text-transform: capitalize;*/
+/*}*/
+
+/*.post p {*/
+/*    text-align: justify*/
+/*}*/
+
+/* Clear floats after the posts */
+.post:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.comments h2 {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.comment {
+    position: relative;
+    background-color: white;
+    padding: 10px 20px;
+    /*margin-top: 10px;*/
+    text-align: justify;
+    width: 80%;
+    margin: 5px auto;
+}
+
+/*registration-page*/
+#register-header{
+    text-align: center;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#register-submit-button{
+    /*padding-right: 10px;*/
+}
+
+#register-login-link{
+    /*padding-left: 5px;*/
+}
+
+
+
+
+form {
+    /*margin: auto;*/
+    /*width: 80%;*/
+}
+
+/*#external-footer {*/
+/*    position: relative;*/
+/*    left: 0;*/
+/*    bottom: 0;*/
+/*    width: 100%;*/
+/*    text-align: center;*/
+/*}*/
+
+
+/* Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: none;
+    /*padding: 20px;*/
+    text-align: center;
+    /*margin-top: auto;*/
+    /*margin-top: 20px;*/
+}
+
+.alert-red {
+    padding: 20px;
+    background-color: #f44336; /* Red */
+    color: white;
+    margin: 15px auto;
+    width: 80%;
+}
+.alert-green {
+    padding: 20px;
+    background-color: green;
+    color: white;
+    margin: 15px auto;
+    width: 80%;
+}
+
+a {
+    color: #336655;
+    text-decoration: none;
+}
+
+#login_container {
+    margin-left: 23vw;
+    margin-right: 15vw;
+    min-width: 200px;
+}
+
+#register-new-user {
+    margin-left: 32vw;
+    margin-right: 22vw;
+    margin-top: 10vh;
+    min-width: 200px;
+    text-align: center;
+    justify-content: center;
+}
+
+/*a:hover {*/
+/*    color: #336655;*/
+/*    text-decoration: underline;*/
+/*}*/
+
+/*.green-btn {*/
+/*    background-color: #4CAF50; !* Green *!*/
+/*    border: none;*/
+/*    color: white;*/
+/*    padding: 15px 32px;*/
+/*    text-align: center;*/
+/*    text-decoration: none;*/
+/*    display: inline-block;*/
+/*    font-size: 16px;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*.green-btn:hover {*/
+/*    background-color: #555555;*/
+/*}*/
+
+/*.red-btn {*/
+/*    background-color: #f44336;*/
+/*}*/
+
+/*.blue-btn {*/
+/*    background-color: #008CBA;*/
+/*}*/
+
+input, select, #username, #password {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+
+.navbar-brand {
+    font-family: Galvji;
+
+    font-weight: bold;
+}
+
+.nav-link { font-family: Galvji}
+
+.text-center {
+    font-family: Galvji;
+    padding-top: 40px;
+    color: white;
+    font-weight: bold;
+
+
+
+
+
+
+
+
+}
+
+.Header1-post {
+    font-family: Galvji;
+    padding-bottom: 20px;
+    padding-top: 50px;
+    padding-left: 100px;
+    text-outline:white;
+    color: #3A1026;
+}
+
+.Save-PostH2 {
+    padding-top: 25px;
+    padding-bottom: 40px;
+    padding-left: 100px;
+
+}
+
+/*.float-right {*/
+/*    float: right;*/
+/*}*/
+
+/*.float-left {*/
+/*    float: left;*/
+/*}*/
+
+/*.align-right {*/
+/*    text-align: right;*/
+/*}*/
+
+/*.align-center {*/
+/*    text-align: center;*/
+/*}*/

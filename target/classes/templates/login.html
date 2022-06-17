@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="/fragments/head :: head"></head>
+
+<body>
+
+<div th:replace="/fragments/header :: header"></div>
+
+<div class="container">
+    <form th:action="@{/login}" method="POST">
+
+        <div th:if="${param.error}">
+            <p class="alert alert-danger" role="alert">Invalid username and/or password.</p>
+        </div>
+        <div th:if="${param.logout}">
+            <p class="alert alert-success" role="alert"> You have been successfully logged out</p>
+        </div>
+
+        <div id = "login_container">
+            <h2 class="text-center">WIN Testimonials</h2>
+            <h2 style="text-align: center">Login</h2>
+            <div class = "login_box">
+                <input type="text" name="username" id="username" placeholder="UserName" required="true" autofocus="autofocus"/>
+
+
+                <input type="password" name="password" id="password" placeholder="Password" required="true"/>
+            </div>
+            <div class="align-center" style="text-align: center" >
+                <label for="remember-me">Remember Me</label>
+                <input type="checkbox" id="remember-me" name="remember-me">
+            </div>
+            <div>
+                <input type="submit" class="green-btn blue-btn" value="Login"/>
+            </div>
+        </div>
+
+    </form>
+
+    <div class="form-group" style="text-align: center">
+        <span>New user? <a href="/" th:href="@{/registration}">Register here</a></span>
+    </div>
+
+</div>
+
+<footer th:replace="/fragments/footer :: footer"></footer>
+
+</body>
+
+</html>
